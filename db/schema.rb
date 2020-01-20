@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_132342) do
+ActiveRecord::Schema.define(version: 2020_01_20_174217) do
 
   create_table "mappings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_01_20_132342) do
     t.integer "priority"
     t.string "question"
     t.string "teaming_stage"
-    t.string "appears_day"
+    t.integer "appears_day"
     t.integer "frequency"
     t.string "question_type"
     t.string "required"
