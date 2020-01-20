@@ -14,7 +14,7 @@ CSV.foreach(Rails.root.join('db', 'data', 'csv_data.csv'), headers: true) do |ro
   mapping = Mapping.find_or_create_by(name: row_hash['Mapping'])
   role = Role.find_or_create_by(name: row_hash['Role'])
 
-  question = Question.create(
+  question = Question.find_or_create_by(
     priority: row_hash['Pri'],
     question: row_hash['Question'],
     teaming_stage: row_hash['Teaming Stages'],

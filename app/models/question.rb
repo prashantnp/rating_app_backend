@@ -4,6 +4,7 @@ class Question < ApplicationRecord
 
   def details
     {
+      id: id,
       priority: priority,
       question: question,
       teaming_stage: teaming_stage,
