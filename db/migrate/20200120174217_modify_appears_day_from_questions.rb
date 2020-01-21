@@ -1,6 +1,6 @@
 class ModifyAppearsDayFromQuestions < ActiveRecord::Migration[6.0]
   def up
-    change_column :questions, :appears_day, :integer
+    change_column :questions, :appears_day, 'integer USING appears_day::integer'
   end
 
   def down
