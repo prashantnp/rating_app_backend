@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirements:
 
-Things you may want to cover:
+* Ruby 2.7.0
 
-* Ruby version
+* Rails 6.0.0
 
-* System dependencies
+* PostgreSQL
 
-* Configuration
+Instructions to start:
 
-* Database creation
+* git clone https://github.com/prashantnp/rating_app_backend.git
 
-* Database initialization
+* cd rating_app_backend
 
-* How to run the test suite
+* Configure database.yml with db name & credentials
 
-* Services (job queues, cache servers, search engines, etc.)
+* Run: bundle install
 
-* Deployment instructions
+* Run: bundle exec rails db:create
 
-* ...
+* Run: bundle exec rails db:migrate
+
+* Run: bundle exec rails db:seed
+
+* Run: rails s
+
+* Visit: http://localhost:3000
